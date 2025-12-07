@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Toast 🍞</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+  <main class="h-screen w-screen flex items-center justify-center" id="btn">
+    <button class="bg-white p-4 rounded shadow  hover:scale-102 hover:bg-neutral-100 transition-all cursor-pointer">
+      <p>Toast 🍞</p>
+    </button>
+  </main>
+</body>
+
+<script> 
+// let it rain 200 toast emojis  over the whole site for 5 seconds (slow animation rain style)
+  document.querySelector("#btn").addEventListener("click", () => {
+    alert("🍞")
+  })
+
+</script>
+</html>
