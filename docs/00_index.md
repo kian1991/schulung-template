@@ -26,13 +26,7 @@ Wir legen das Fundament. Keine Magie, nur Technik.
 - **02 Container Management:** CLI Basics, Limits (CPU/RAM), Logging, Restart Policies.
 - **03 Image Basics:** Docker Hub, Tags, Image Inspection.
 - **04 Networking Basics:** Bridge, Host, None. Isolation verstehen.
-- **Lab:** "The Manual Way" - Wir starten eine Multi-Container App von Hand.
-- **Bonus:** "WordPress Manual" - Der Härtetest.
-- **Bonus:** "Limits & Crashes" - OOM Kills provozieren.
-- **Bonus:** "Pro CLI" - `cp`, `diff`, `commit` & Offline Transport.
-- **Bonus:** "Debugging" - Ports, Crashes & Logs verstehen.
-- **Bonus:** "CLI Ninja" - Formatting, Filters & Batch Commands.
-- **Bonus:** "Docker Socket" - Die dunkle Seite der Macht (Inception).
+
 
 ### Day 2: Construction
 Vom Konsumenten zum Produzenten.
@@ -40,7 +34,6 @@ Vom Konsumenten zum Produzenten.
 - **01 Storage:** Daten persistieren (Bind Mounts vs. Volumes).
 - **02 Dockerfiles:** Eigene Images bauen, Caching verstehen, Multi-Stage Builds.
 - **03 Docker Compose:** Infrastructure as Code für Container-Setups.
-- **Lab:** "The Automated Way" - Fullstack Applikation mit Compose.
 
 ### Day 3: Production & Operations
 Ready for the real world.
@@ -49,15 +42,13 @@ Ready for the real world.
 - **02 Security:** Rootless Container, Image Scanning, Best Practices.
 - **03 Tools:** Traefik Proxy, Portainer UI.
 - **04 K8s Outlook:** Was kommt nach Docker?
-- **Lab:** "Production Ready" - Security Audits und Deployment.
 
-### Day 4: Emerging Tech (Optional)
+<!-- ### Day 4: Emerging Tech (Optional)
 The Future is now.
 
 - **01 MCP & Docker:** Model Context Protocol Server isolieren.
 - **02 Local AI:** LLMs (Ollama) lokal betreiben.
-- **03 Dev Containers:** Reproduzierbare Entwicklungsumgebungen.
-- **Lab:** "AI Agent Stack" - Wir bauen einen eigenen MCP Server & eine lokale KI.
+- **03 Dev Containers:** Reproduzierbare Entwicklungsumgebungen. -->
 
 :::tip[Unser Motto]
 **Hands-on first, Theory second.** Wir tippen erst, dann erklären wir.

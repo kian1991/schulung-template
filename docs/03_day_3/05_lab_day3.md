@@ -23,7 +23,7 @@ Der Blog aus Tag 2 läuft. Aber wir wollen mehr Professionalität.
 ```yaml
 services:
   reverse-proxy:
-    image: traefik:v2.10
+    image: traefik:3.6.4
     command: --api.insecure=true --providers.docker
     ports:
       - "80:80"        # Der einzige Port, der offen ist!
@@ -31,15 +31,10 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
 
-  wordpress:
-    image: wordpress:latest
-    labels:
-      - "traefik.http.routers.blog.rule=Host(`blog.localhost`)"
-    # KEINE PORTS MEHR! Traefik routet via Docker Network intern.
 ```
 
 ## Bonus: Registry
 
-1. Starte eine lokale Registry (`docker run -d -p 5000:5000 registry:2`).
+1. Starte eine lokale Registry (`docker run -d -p 5000:5000 registry:3`).
 2. Tagge dein WordPress Image (falls du ein eigenes hättest) und pushe es.
 3. Simuliere einen "Production Pull".
