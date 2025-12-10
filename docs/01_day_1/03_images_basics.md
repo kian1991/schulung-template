@@ -29,7 +29,7 @@ docker pull nginx:1.25-alpine
 ```
 
 :::warning[Don't use latest]
-Verwende in Produktion niemals `:latest`. Das ist ein bewegliches Ziel. Nutze immer konkrete Versionen (z.B. `:1.25`) oder Hashes, um reproduzierbare Builds zu garantieren.
+Verwende in Produktion niemals `:latest`. Das ist ein bewegliches Ziel. Nutze immer konkrete Versionen (z.B. `:1.25`) oder Hashes, um reproduzierbare Builds zu garantieren. -> **ACHTUNG:** In diesem Kurs nutzen wir `latest`, damit es einfacher ist. In Echt: Pinnen!
 :::
 
 ## Image CLI
@@ -63,7 +63,7 @@ Wenn du einen Container startest, legt Docker eine dünne Schreib-Schicht oben d
 
 ## Exkurs: Alpine Linux
 
-Du wirst oft Images sehen, die auf `alpine` basieren (z.B. `node:18-alpine`).
+Du wirst oft Images sehen, die auf `alpine` basieren (z.B. `node:alpine`).
 Alpine Linux ist eine extrem leichtgewichtige Distribution (ca. 5MB!).
 
 ### Warum Alpine?
@@ -71,7 +71,7 @@ Alpine Linux ist eine extrem leichtgewichtige Distribution (ca. 5MB!).
 - **Sicherheit:** Weniger installierte Software = weniger Angriffsfläche.
 - **Speed:** Schnellerer Download und Start.
 
-### Software installieren (apk)
+### Software installieren
 Alpine nutzt nicht `apt`, sondern `apk`.
 
 ```dockerfile

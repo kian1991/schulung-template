@@ -23,7 +23,7 @@ const config: Config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'kian1991', // Usually your GitHub org/user name.
-  projectName: 'schulung', // Usually your repo name.
+  projectName: 'docker-schulung', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -67,7 +67,7 @@ const config: Config = {
   themeConfig: {
     // Replace with your project's social card
     navbar: {
-      title: 'schulung',
+      title: '🐳 Docker',
       items: [],
     },
     footer: {

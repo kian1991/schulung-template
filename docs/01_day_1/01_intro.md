@@ -77,7 +77,7 @@ Du solltest einen `Client:` und einen `Server:` Block sehen.
 
 :::warning[Linux Nutzer]
 Wenn du bei jedem Befehl `sudo` brauchst, füge deinen User zur `docker` Gruppe hinzu:
-`sudo usermod -aG docker $USER`. Logout/Login erforderlich.
+`sudo usermod -aG docker $USER; newgrp docker`. Logout/Login erforderlich.
 :::
 
 ## Docker Architektur

@@ -1,0 +1,5 @@
+label: "Übungen"
+position: 10
+link:
+  type: generated-index
+  description: "Hands-on Challenges"

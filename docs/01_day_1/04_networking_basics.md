@@ -2,7 +2,7 @@
 title: "04 Networking Basics"
 ---
 
-## Die Default Bridge (Don't use it!)
+## Die Default Bridge
 
 Wenn du `docker run` ohne Netzwerk-Option ausführst, landet der Container im Standard `bridge` Netzwerk.
 
@@ -14,7 +14,7 @@ Warum ist das schlecht?
 1. **Kein DNS Scaling:** Container müssen sich über IP-Adressen ansprechen (die ändern sich ständig!).
 2. **Isolation:** Jeder Container im Standard-Netz kann jeden "sehen".
 
-## User Defined Networks (The Way)
+## User Defined Networks
 
 Wir erstellen eigene Netzwerke für unsere Apps.
 

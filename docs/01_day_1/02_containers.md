@@ -23,15 +23,15 @@ Wichtige Befehle, die du im Schlaf können musst:
 
 | Befehl | Funktion |
 | :--- | :--- |
-| `docker run` | Erstellt Container + Startet ihn. |
-| `docker create` | Erstellt ihn nur (selten genutzt). |
-| `docker start` | Startet einen *existierenden*, gestoppten Container. |
-| `docker stop` | Sendet SIGTERM (freundlich), dann SIGKILL. |
-| `docker rm` | Löscht einen gestoppten Container. |
-| `docker ps` | Zeigt *laufende* Container. |
+| [`docker run`](https://docs.docker.com/reference/cli/docker/container/run/) | Erstellt Container + Startet ihn. |
+| [`docker create`](https://docs.docker.com/reference/cli/docker/container/create/) | Erstellt ihn nur (selten genutzt). |
+| [`docker start`](https://docs.docker.com/reference/cli/docker/container/start/) | Startet einen *existierenden*, gestoppten Container. |
+| [`docker stop`](https://docs.docker.com/reference/cli/docker/container/stop/) | Sendet SIGTERM (freundlich), dann SIGKILL. |
+| [`docker rm`](https://docs.docker.com/reference/cli/docker/container/rm/) | Löscht einen gestoppten Container. |
+| [`docker ps`](https://docs.docker.com/reference/cli/docker/container/ls/) | Zeigt *laufende* Container. |
 | `docker ps -a` | Zeigt *alle* Container (auch gestoppte). |
 
-### Background Mode (Detached)
+### Background Mode
 
 Webserver willst du nicht im Vordergrund haben. Nutze `-d`:
 
@@ -70,7 +70,7 @@ docker logs -f mein-nginx  # Follow stream (wie tail -f)
 ```
 
 :::tip[Pro-Tipp]
-Nutze `docker stats`, um CPU und RAM Verbrauch aller Container live zu sehen.
+Nutze [`docker stats`](https://docs.docker.com/reference/cli/docker/container/stats/), um CPU und RAM Verbrauch aller Container live zu sehen.
 :::
 
 ## Aufräumen
@@ -83,5 +83,5 @@ docker rm -f nginx
 ```
 
 :::warning[Nuke it all]
-Für den "großen Hausputz" (Vorsicht!): `docker system prune -a`. Das löscht alles, was nicht läuft oder benutzt wird.
+Für den "großen Hausputz" (Vorsicht!): [`docker system prune`](https://docs.docker.com/reference/cli/docker/system/prune/) -a. Das löscht alles, was nicht läuft oder benutzt wird.
 :::

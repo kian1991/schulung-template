@@ -42,7 +42,7 @@ docker run -d \
 ```
 </details>
 
-### 3. Daten schreiben (Der Test)
+### 3. Daten schreiben
 
 Wir nutzen jetzt einen zweiten Container als "Client". Wir gehen nicht *in* den Redis Container, sondern starten einen neuen `redis:alpine` Container interaktiv, verbinden ihn ins gleiche Netz und nutzen das Tool `redis-cli`, um `my-redis` anzusprechen.
 
@@ -64,7 +64,7 @@ docker run -it --rm \
 ```
 </details>
 
-### 4. Der Cliffhanger (Datenverlust)
+### 4. Der Cliffhanger
 
 Lösche den `my-redis` Container (simulierter Absturz).
 Starte ihn neu.

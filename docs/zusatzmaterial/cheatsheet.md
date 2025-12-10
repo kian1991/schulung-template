@@ -52,7 +52,7 @@ title: "Docker Cheatsheet"
 | `docker compose logs -f` | Logs aller Services |
 | `docker compose ps` | Status des Stacks |
 
-## Clean Up (Nuke it)
+## Clean Up
 
 ```bash
 docker system prune -a --volumes
