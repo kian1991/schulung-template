@@ -53,7 +53,7 @@ docs/
 - **Vergleiche:** Erkläre *wann* man etwas nutzt (und wann nicht). Vergleiche mit Konkurrenz-Technologien.
 
 #### **4. Formatierung**
-
+- NUTZE KEINE! BINDESTRICHE in Sätzen...(aufzählungen sind ok)
 - **Frontmatter:** Jede Datei beginnt zwingend mit:
   ```markdown
   ---
