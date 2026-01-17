@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'schulung',
+  title: 'MySQL Advanced',
   tagline: 'Schulungs Unterlagen',
   favicon: 'favicon.ico',
 
@@ -15,7 +15,7 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://schulung.notmuch.space',
+  url: 'https://mysql.notmuch.space',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -23,7 +23,7 @@ const config: Config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'kian1991', // Usually your GitHub org/user name.
-  projectName: 'schulung', // Usually your repo name.
+  projectName: 'mysql-advanced', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -67,7 +67,7 @@ const config: Config = {
   themeConfig: {
     // Replace with your project's social card
     navbar: {
-      title: 'schulung',
+      title: 'MySQL Advanced',
       items: [],
     },
     footer: {

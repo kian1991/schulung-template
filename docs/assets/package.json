@@ -1,0 +1,16 @@
+{
+  "name": "mysql-dev-labs",
+  "version": "1.0.0",
+  "description": "Labs for MySQL for Developers Course",
+  "main": "index.ts",
+  "scripts": {
+    "start": "bun run index.ts"
+  },
+  "dependencies": {
+    "mysql2": "^3.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "bun-types": "latest"
+  }
+}
