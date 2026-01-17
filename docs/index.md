@@ -4,52 +4,84 @@ sidebar_position: 0
 slug: /
 ---
 
-# MySQL/MariaDB für fortgeschrittene Entwickler
+# Linux Server Administration
 
-Willkommen zum Experten-Kurs! Wir lassen die Grundlagen hinter uns und tauchen tief in die Architektur, Performance-Optimierung und fortgeschrittene Entwicklung mit **aktuellen LTS Versionen** von MySQL und MariaDB ein.
+Willkommen zur Schulung! In diesem praxisorientierten Kurs lernst du, Linux-Server professionell zu administrieren. Wir arbeiten mit **Ubuntu Server 24.04 LTS** und fokussieren uns auf hands-on Erfahrung.
 
-Dieser Kurs ist speziell für Entwickler konzipiert, die performante, skalierbare und sichere Datenbank-Anwendungen bauen müssen.
+:::tip Praxis steht im Vordergrund
+Du wirst die meiste Zeit in Labs verbringen. Theorie gibt es nur so viel wie nötig - wir lernen am besten durch Ausprobieren!
+:::
 
 ## Zielgruppe & Voraussetzungen
 
-Du solltest mit `SELECT`, `INSERT`, `UPDATE` und einfachen `JOIN`s bereits sicher umgehen können. Wir fokussieren uns auf:
-*   **Migration:** Strategien für den Wechsel von MySQL zu MariaDB.
-*   **Performance:** Query Tuning, Index-Strategien und Profiling (inkl. PMM).
-*   **Programmierung:** Business-Logik direkt in der Datenbank (Stored Procedures, Triggers).
-*   **Internals:** Transaktionen, Locks und Isolation Levels verstehen.
+Dieser Kurs ist für Einsteiger konzipiert. Du solltest:
+- Grundlegende Computerkenntnisse mitbringen
+- Keine Angst vor der Kommandozeile haben
+- Bereit sein, viel selbst auszuprobieren
 
-## Agenda
+## Kursformate
 
-### Modul 1: Advanced SQL & Transaction Management
-Wir starten mit dem Fundament für komplexe Anwendungen. Wie verhalten sich Daten unter Last und im Mehrbenutzerbetrieb?
-*   **Verbindung & Tools:** CLI Profi-Tipps (`mysql`, `mysqladmin`).
-*   **Complex Queries:** Deep Dive in `JOIN`-Typen, `UNION` Strategien und Subquery-Optimierung.
-*   **ACID & Transaktionen:** Was passiert bei `ROLLBACK` und `COMMIT` wirklich?
-*   **Locking:** Deadlocks verstehen und vermeiden (Row-Level Locking, Shared vs. Exclusive).
+Dieser Kurs existiert in zwei Varianten:
 
-### Modul 2: Data Management & Migration
-Daten sind das Gold deines Unternehmens. Wir lernen, sie effizient zu bewegen und zu transformieren.
-*   **Import/Export:** Umgang mit großen Dumps (`mysqldump`, `mysqlimport`).
-*   **Migration Strategy:** **Special Focus:** Wir migrieren einen Datensatz live von MySQL zu MariaDB und prüfen die Kompatibilität.
-*   **Advanced Features:** Views, Materialized Views Workarounds, Virtual Columns.
-*   **Special Types:** JSON, GIS (Geodaten) und Volltextsuche.
+### 4-Tage-Schulung (32h)
 
-### Modul 3: Programming, Tuning & PMM
-Der "Performance-Tag". Wir automatisieren Logik und finden jeden Flaschenhals.
-*   **Stored Programs:** Variablen, Stored Procedures, Functions und Error Handling (`SIGNAL`).
-*   **Automation:** Trigger und Events (der interne Cronjob).
-*   **Dynamic SQL:** Dynamische Code-Generierung.
-*   **Profiling & Tuning:** `EXPLAIN` verstehen, Schema-Optimierung.
-*   **Monitoring:** **Special Focus:** Setup und Nutzung von **PMM (Percona Monitoring and Management)** zur Analyse von Slow Queries.
+| Tag | Vormittag (4h) | Nachmittag (4h) |
+|-----|----------------|-----------------|
+| 1 | Einführung + Dateisystem | Paketverwaltung |
+| 2 | Prozesse + Signale | Benutzer + Berechtigungen |
+| 3 | Netzwerk + Firewall | Speicher + LVM/RAID |
+| 4 | Systemd + Shell-Basics + Container | Monitoring + Backup + Sicherheit |
 
-## Tech Stack & Setup
+**Zusätzliche Themen:** Virtualisierung (Theorie), Docker-Container
 
-Wir nutzen eine moderne, containerisierte Umgebung.
+### 5-Tage-Schulung (40h)
 
-*   **MySQL LTS** (Container)
-*   **MariaDB LTS** (Container)
-*   **PMM Server 2.x** (Container)
-*   **Bun (TypeScript)** für Skripte und Client-Simulationen.
+| Tag | Vormittag (4h) | Nachmittag (4h) |
+|-----|----------------|-----------------|
+| 1 | Einführung + Dateisystem | Paketverwaltung |
+| 2 | Prozesse + Signale | Benutzer + Berechtigungen |
+| 3 | Netzwerk + Firewall | Speicher + LVM/RAID |
+| 4 | Systemd + Boot | Shell-Scripting (Teil 1) |
+| 5 | Shell-Scripting (Teil 2) + Monitoring | Backup + Sicherheit + Bonding |
 
-### Szenario: Employees Database (Extended)
-Wir arbeiten mit einem erweiterten Datensatz der "Employees" Datenbank (`~300k` Datensätze), um echte Performance-Effekte messbar zu machen.
+**Zusätzliche Themen:** Vollständiges Shell-Scripting, Netzwerk-Bonding, cgroups
+
+## Themenübersicht
+
+### Kernmodule (beide Varianten)
+
+1. **Einführung** - Linux-Basics, erste Schritte mit Ubuntu
+2. **Dateisystem** - FHS, Navigation, Dateien manipulieren
+3. **Paketverwaltung** - apt, dpkg, Software installieren
+4. **Prozesse & Signale** - Prozesse überwachen und steuern
+5. **Benutzerverwaltung** - User, Gruppen, sudo
+6. **Dateiberechtigungen** - rwx, ACLs, Spezial-Bits
+7. **Netzwerk** - IP-Konfiguration, ufw Firewall, Diagnose
+8. **Speicher** - Partitionen, Dateisysteme, ext4
+9. **LVM & RAID** - Flexible Speicherverwaltung
+10. **Systemd** - Services, Boot-Prozess, eigene Units
+11. **Shell-Scripting** - Automatisierung mit Bash
+12. **Monitoring** - Logs, Systemüberwachung
+13. **Backup** - tar, rsync, Strategien
+14. **Sicherheit** - System härten, AppArmor
+15. **Fehlerbehebung** - Troubleshooting, Systemrettung
+
+## Tech Stack
+
+- **Ubuntu Server 24.04 LTS** in VirtualBox
+- **VirtualBox** für VMs und Labs
+- **Terminal/SSH** für alle Arbeiten
+
+## Hinweise
+
+:::info Ubuntu-Fokus
+Wir konzentrieren uns auf Ubuntu/Debian. Andere Distributionen (RHEL, SUSE) nutzen teilweise andere Tools (rpm, yum, dnf, zypper) - das erwähnen wir kurz, üben es aber nicht.
+:::
+
+:::caution Vorbereitung
+Stelle sicher, dass VirtualBox installiert ist und du die Ubuntu Server ISO heruntergeladen hast. Details findest du im VM-Setup-Dokument in den Assets.
+:::
+
+## Los geht's!
+
+Springe direkt zur [Einführung](./00_einfuehrung/01_theorie.md) oder schaue dir zuerst das VM-Setup unter "Assets & Setup" an.
